@@ -20,12 +20,22 @@ img{
     max-width: 100%;
 }
 
-h1 {
+.h1-white {
     font-family: 'Roboto', sans-serif;
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 100;
+    color:white;
+}
+.h1-black {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    color: black;
 }
 
+.bg-warning {
+    background-color: #F7CC4B;
+}
 
 section{
     padding: 100px 0px;
@@ -43,7 +53,7 @@ section{
 
 .navbar-light .navbar-toggler {
     border: 2px solid  #F7CC4B !important
-       
+
 }
 
 /*.navbar-collapse {
@@ -58,24 +68,24 @@ section{
 .navbar-light .navbar-toggler-icon {
 
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(247, 204, 75, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-    
+
 
 }
 
 
 /*lead*/
 
-h1{
+/*h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 2.5rem;
-}
+}*/
 
-.lead{
+.lead, .about{
     position: relative;
 }
 
-.lead:after{
+.lead:after, .video:after{
     content: '';
     position: absolute;
     bottom: 0;
@@ -91,6 +101,169 @@ h1{
 
 /*about*/
 
-.about {
+.about, .video {
     padding: 50px 0px;
+}
+
+
+
+/*video*/
+
+
+.video{
+    background-color: #F7CC4B;
+    padding: 115px 0px;
+    position: relative;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.video:before {
+    content: '';
+    position: absolute;
+    background: url(../img/skew-full-top-ccw.png) bottom;
+    background-size: 100% 100%;
+    height: 100px;
+    top: 0;
+    width: 100%;
+}
+
+
+
+/*team*/
+
+
+.team figure .hover-img{
+    display: none;
+  
+}
+.team figure:hover .hover-img {
+    display: block;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    top: 4.6%;
+    left: 15.7%;
+    background-color: #F7CC4B;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.hover-img span {
+    color: white;
+    position: relative;
+    top: 45%;
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    font-size: 20px;
+    margin-top: -15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #F7CC4B;
+    line-height: 27px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+
+
+
+
+/*parallax*/
+
+
+.parallax, .portfolio{
+    position: relative;
+}
+.parallax:before {
+      content: '';
+    position: absolute;
+    background: url(../img/skew-full-top-cw.png) bottom;
+    background-size: 100% 100%;
+    height: 100px;
+    top: 0;
+    width: 100%;
+}
+.parallax:after {
+     content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-image: url(../img/skew-full-bottom-cw.png);
+    background-size: 100% 100%; 
+}
+
+
+.parallax-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.1rem;
+    font-weight: 300;
+    color:white;
+}
+
+
+.parallax h5{
+    font-size: 1rem;
+}
+
+.parallax p{
+    font-size: 1rem;
+max-width: 65%;
+}
+
+
+/*principles*/
+
+
+
+
+/*portfolio*/
+
+.portfolio{
+    position: relative;
+}
+.portfolio:before {
+    content: '';
+    position: absolute;
+    background: url(../img/skew-full-top-ccw.png) bottom;
+    background-size: 100% 100%;
+    height: 100px;
+    top: 0;
+    width: 100%;
+}
+
+.portfolio:after {
+     content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-image: url(../img/skew-full-bottom-ccw.png);
+    background-size: 100% 100%; 
 }
