@@ -76,11 +76,6 @@ section{
 
 /*lead*/
 
-/*h1{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 2.5rem;
-}*/
 
 .lead, .about{
     position: relative;
@@ -170,7 +165,7 @@ section{
 
 }
 
-.team article:hover .hover-img{
+.team article figure:hover .hover-img{
     display: block;
 
 }
@@ -388,7 +383,6 @@ section{
 
 .footer {
     background: #222;
-    display: block;
     padding: 30px 0;
     text-align: center;
 }
@@ -416,7 +410,7 @@ section{
     text-decoration: none;
     color: #fff;
     border: 2px solid #fff;
-    border-radius: 4999px;
+    border-radius: 50%;
     line-height: 26px;
     font-size: 1rem;
 }
