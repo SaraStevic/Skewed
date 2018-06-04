@@ -56,12 +56,8 @@ section{
 
 }
 
-/*.navbar-collapse {
-    background-color: #F7CC4B;
-    padding: 10px;
-}*/
 
-.navbar-light .navbar-nav .nav-link:hover,.navbar-light .navbar-nav .nav-link:focus {
+.navbar-light .navbar-nav,.navbar-light .navbar-nav .nav-link:focus {
     color: white !important;
 }
 
@@ -71,6 +67,11 @@ section{
 
 
 }
+
+
+
+
+
 
 
 /*lead*/
@@ -149,44 +150,48 @@ section{
 /*team*/
 
 
-.team figure .hover-img{
-    display: none;
-  
+.team article figure{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
 }
-.team figure:hover .hover-img {
-    display: block;
+
+.team .hover-img{
     width: 220px;
     height: 220px;
+    top: 15px;
+    left: 15px;
     border-radius: 50%;
-    z-index: 1;
-    position: absolute;
-    top: 4.6%;
-    left: 15.7%;
+    display: none;
+    line-height: 220px;
     background-color: #F7CC4B;
-    padding: 0;
-    margin: 0 auto;
-    text-align: center;
+    position: absolute;
+
 }
 
+.team article:hover .hover-img{
+    display: block;
 
-.hover-img span {
-    color: white;
-    position: relative;
-    top: 45%;
-    list-style: none;
-    display: inline-block;
-    padding: 5px;
-    font-size: 20px;
-    margin-top: -15px;
+}
+
+.team .hover-img .fa{
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    background-color: #F7CC4B;
-    line-height: 27px;
-    margin-right: 10px;
-    border-radius: 50%;
     border: 2px solid white;
+    border-radius: 50%;
+    line-height: 40px;
+    color: white;
+    transition: 0.5s linear;
 }
+
+.team .hover-img .fa:hover{
+    transform: rotate(360deg);
+
+}
+
+
+
 
 
 
@@ -199,7 +204,7 @@ section{
     position: relative;
 }
 .parallax:before {
-      content: '';
+    content: '';
     position: absolute;
     background: url(../img/skew-full-top-cw.png) bottom;
     background-size: 100% 100%;
@@ -208,7 +213,7 @@ section{
     width: 100%;
 }
 .parallax:after {
-     content: '';
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
@@ -233,7 +238,7 @@ section{
 
 .parallax p{
     font-size: 1rem;
-max-width: 65%;
+    max-width: 65%;
 }
 
 
@@ -258,7 +263,7 @@ max-width: 65%;
 }
 
 .portfolio:after {
-     content: '';
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
@@ -267,3 +272,158 @@ max-width: 65%;
     background-image: url(../img/skew-full-bottom-ccw.png);
     background-size: 100% 100%; 
 }
+
+.portfolio article:hover .portfolio-hover{
+    display: block;
+}
+
+.portfolio-hover {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    display: none;
+}
+.portfolio-hover .fa {
+    position: relative;
+    top: 50%;
+    color: #101010;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 15px;
+    margin-top: -15px;
+    width: 40px;
+    height: 40px;
+    line-height: 27px;
+    border-radius: 50%;
+    background-color: rgba(192,192,192,0.5);
+}
+
+
+
+/*achievements*/
+
+
+#achievements .fa{
+    font-size: 5rem;
+}
+
+.achievements h1 {
+    font-size: 2rem;
+
+}
+.achievements h3{
+    font-size: 5rem;
+}
+.achievements{
+    position: relative;
+}
+.achievements:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-image: url(../img/skew-full-bottom-cw.png);
+    background-size: 100% 100%; 
+}
+
+
+
+
+/*subscribe*/
+
+
+.form input[type="text"] , input[type="email"] {
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    text-indent: 10px;
+    border-radius: 3px;
+}
+
+.form-control::placeholder {
+    color: white;
+    opacity: 1;
+}
+.form-control::-moz-placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.btn-dark {
+    border-radius: 3px;
+
+}
+
+.form input[type="button"]:hover, .form input[type="submit"]:hover {
+    background: #fff;
+    border: 2px solid #fff;
+    color: #f7cc4b;
+}
+
+.form{
+    position: relative;
+}
+.form:after {
+    content: '';
+    position: absolute;
+    background: url(../img/skew-full-top-cw.png) bottom;
+    background-size: 100% 100%;
+    height: 100px;
+    top: 0;
+    width: 100%;
+}
+
+
+.form-control:focus {
+    background-color: transparent;
+}
+
+
+
+
+/*footer*/
+
+
+.footer {
+    background: #222;
+    display: block;
+    padding: 30px 0;
+    text-align: center;
+}
+
+
+.footer .social {
+    margin: 0 auto;
+    padding: 0px;
+}
+.footer p{
+    color: #BBBBBB;
+    font-size: 0.8rem;
+}
+.footer .social li {
+    display: inline-block;
+}
+
+.footer .social li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 10px 6px;
+    text-align: center;
+    border: 1px solid #333;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 4999px;
+    line-height: 26px;
+    font-size: 1rem;
+}
+
+.footer .social li a:hover {
+    color: #f7cc4b;
+    border-color: #f7cc4b;
+}
+
+

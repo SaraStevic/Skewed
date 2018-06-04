@@ -68,20 +68,27 @@ section{
     color: black;
 }
 
-
-.team figure:hover .hover-img {
-    
-    top: 4.7%;
-    left: 11.6%;
-    
-}
-
 /*parallax*/
 .parallax-text {
     font-family: 'Roboto', sans-serif;
     font-size: 3rem;
     font-weight: 300;
     color:white;
+}
+
+
+
+.achievements h1 {
+    font-size: 4rem;
+   
+}
+.achievements h3{
+    font-size: 5rem;
+}
+
+
+.navbar-expand-md .navbar-nav .nav-link {
+    font-size: 0.9rem;
 }
 }
 
