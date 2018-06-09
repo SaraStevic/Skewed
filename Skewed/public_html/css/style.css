@@ -68,8 +68,15 @@ section{
 
 }
 
+.navbar-light .navbar-nav {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
 
 
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #F7CC4B !important;
+}
 
 
 
@@ -112,21 +119,7 @@ section{
     position: relative;
 }
 
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px; height: 0; overflow: hidden;
-}
 
-.video-container iframe,
-.video-container object,
-.video-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 
 
 
@@ -155,7 +148,7 @@ section{
 .team .hover-img{
     width: 220px;
     height: 220px;
-    top: 15px;
+    top: 0px;
     left: 15px;
     border-radius: 50%;
     display: none;

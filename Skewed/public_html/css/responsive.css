@@ -14,6 +14,7 @@
         font-size: 0.8rem;
     }
 
+
 }
 
 
@@ -27,6 +28,24 @@
     }
     .navbar-expand-md .navbar-nav .nav-link {
         font-size: 0.8rem;
+    }
+
+
+    .team .hover-img{
+        width: 220px;
+        height: 220px;
+        top: 0px;
+        left: 15px;
+        border-radius: 50%;
+        display: none;
+        line-height: 220px;
+        background-color: #F7CC4B;
+        position: absolute;
+
+    }
+    .navbar-light .navbar-nav {
+
+        background-color:transparent;
     }
 }
 
@@ -90,12 +109,62 @@
     .navbar-expand-md .navbar-nav .nav-link {
         font-size: 0.9rem;
     }
+
+
+
+    /*    team*/
+    .team article figure{
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .team .hover-img{
+        width: 200px;
+        height: 200px;
+        top: 0px;
+        left: 0px;
+        border-radius: 50%;
+        display: none;
+        line-height: 220px;
+        background-color: #F7CC4B;
+        position: absolute;
+
+    }
+
+    .navbar-light .navbar-nav {
+
+        background-color:transparent;
+    }
 }
 
 
 @media(min-width:1200px){
 
+    .team article figure{
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        position: relative;
+    }
 
+    .team .hover-img{
+        width: 220px;
+        height: 220px;
+        top: 0px;
+        left: 15px;
+        border-radius: 50%;
+        display: none;
+        line-height: 220px;
+        background-color: #F7CC4B;
+        position: absolute;
+
+    }
+    .navbar-light .navbar-nav {
+
+        background-color:transparent;
+    }
 }
 
 
